@@ -2,6 +2,14 @@ language: generic
 
 sudo: required
 
+addons:
+  apt:
+    packages:
+    - qtbase5-dev
+    - qtdeclarative5-dev
+    - qttools5-dev
+    - qttools5-dev-tools
+    
 before_install:
     - mkdir build
     - cd build
