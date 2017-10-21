@@ -1,4 +1,9 @@
-mkdir build
-cd build
-cmake -DCMAKE_BUILD_TYPE=Debug ..
-make
+language: generic
+
+sudo: required
+
+before_install:
+    - mkdir build
+    - cd build
+    - cmake -DCMAKE_BUILD_TYPE=Debug ..
+    - make
